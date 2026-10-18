@@ -15,167 +15,155 @@ main{max-width:760px;margin:0 auto;padding:12px}h2{font-size:1.1rem;margin:22px 
 a.btn{display:block;text-align:center;background:#d6001c;color:#fff;text-decoration:none;font-weight:600;padding:13px;border-radius:11px;margin-top:8px;font-size:1rem}
 a.btn:active{opacity:.85}.tag{display:inline-block;background:#22a06b;color:#fff;font-size:.75rem;font-weight:700;border-radius:6px;padding:2px 7px;margin-left:6px;vertical-align:middle}
 .empty{color:#5b6475;font-size:.92rem;padding:4px 6px}footer{color:#7a8396;font-size:.8rem;text-align:center;padding:20px 12px 30px}
-.marks,.st,.filt,.applied{display:none}html.js .marks{display:flex;gap:8px;margin-top:8px}html.js .filt{display:flex}
-.mk{flex:1;min-height:46px;border:1.5px solid #c5ccd8;background:#fff;border-radius:11px;font-size:.95rem;font-weight:600;color:#38404f}
-.mk.on{background:#38404f;color:#fff;border-color:#38404f}.mk-a.on{background:#1f8f5f;border-color:#1f8f5f}
+.marks,.st,.filt,.applied{display:none}html.js .marks{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:8px}html.js .filt{display:grid}
+.mk{min-height:48px;padding:4px 3px;border:1.5px solid #c5ccd8;background:#fff;border-radius:11px;font-size:.84rem;line-height:1.15;font-weight:600;color:#38404f}
+.mk.on{background:#38404f;color:#fff;border-color:#38404f}.mk-a.on{background:#1f8f5f;border-color:#1f8f5f}.mk-u.on{background:#f2c200;border-color:#e0b000;color:#3a2f00}
 .st span{display:none;font-size:.78rem;font-weight:700;border-radius:6px;padding:2px 7px;margin:4px 6px 0 0}
-.card.v .st,.card.a .st{display:block}.card.v .s-v{display:inline-block;background:#e3e6ec;color:#38404f}.card.a .s-a{display:inline-block;background:#1f8f5f;color:#fff}
-.card.v:not(.a){opacity:.55}.card.v:not(.a) .btn{background:#8a94a6}.card.dup{display:none!important}
-.filt{position:sticky;top:0;z-index:5;gap:6px;background:#f4f5f7;padding:8px 0;margin:0 0 4px}
-.filt button{flex:1;min-height:46px;border:1.5px solid #c5ccd8;background:#fff;border-radius:11px;font-size:.88rem;font-weight:600;color:#38404f;padding:4px}
+.card.v .st,.card.a .st,.card.u .st{display:block}.card.u:not(.a) .s-u{display:inline-block;background:#f7d34a;color:#3a2f00}.card.u:not(.a){border-left:5px solid #f2c200}.card.v .s-v{display:inline-block;background:#e3e6ec;color:#38404f}.card.a .s-a{display:inline-block;background:#1f8f5f;color:#fff}
+.card.v:not(.a):not(.u){opacity:.55}.card.v:not(.a):not(.u) .btn{background:#8a94a6}.card.dup{display:none!important}
+.filt{position:sticky;top:0;z-index:5;gap:6px;grid-template-columns:1fr 1fr;background:#f4f5f7;padding:8px 0;margin:0 0 4px}
+.filt button{min-height:46px;border:1.5px solid #c5ccd8;background:#fff;border-radius:11px;font-size:.88rem;font-weight:600;color:#38404f;padding:4px}
 .filt button.on{background:#1f3a5f;color:#fff;border-color:#1f3a5f}.filt b{font-weight:700;opacity:.8}
 html.js .applied.has{display:block}.applied summary{font-size:1.1rem;font-weight:650;margin:22px 4px 10px;padding:12px 6px;cursor:pointer;min-height:46px}
 .hide{display:none!important}
 </style></head><body>
 <header><h1>Удалённые вакансии: подборка</h1>
-<p>Только удалённая работа · опыт до 4 лет · источник hh.ru<br>Обновлено: 18.10.2026 20:00 (Алматы, UTC+5)</p></header>
+<p>Только удалённая работа · опыт до 4 лет · источник hh.ru<br>Обновлено: 18.10.2026 20:53 (Алматы, UTC+5)</p></header>
 <main>
-<nav class="filt" aria-label="Фильтр"><button type="button" data-f="all" class="on">Все <b id="c-all"></b></button><button type="button" data-f="unseen">Не просмотренные <b id="c-unseen"></b></button><button type="button" data-f="applied">Подала <b id="c-applied"></b></button></nav>
+<nav class="filt" aria-label="Фильтр"><button type="button" data-f="all" class="on">Все <b id="c-all"></b></button><button type="button" data-f="unseen">Не просмотренные <b id="c-unseen"></b></button><button type="button" data-f="unsure">Сомневаюсь <b id="c-unsure"></b></button><button type="button" data-f="applied">Подала <b id="c-applied"></b></button></nav>
 <section class="grp" id="g-new"><h2>🆕 Новые с последней проверки</h2><div class="list">
-<article class="card new" data-id="138126798">
-<div class="top"><div class="badge b-lo" title="Оценка соответствия">68</div><div>
-<p class="title">Middle Project Manager (Менеджер проектов)<span class="tag">НОВОЕ</span></p>
-<div class="company">Your CodeReview · Воронеж</div>
-<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-a">✓ Подала</span></div></div></div>
-<div class="meta"><div><b>Зарплата:</b> от 140 000 ₽ до вычета налогов</div>
-<div><b>Опыт:</b> 1–3 года по hh; в тексте от 1,5 лет</div>
-<div><b>Формат:</b> удалённо</div>
-<div><b>Найдено:</b> 2026-10-18 20:00 · опубликовано 2026-10-05</div></div>
-<div class="reason">IT PM в AI-стартапе: спринты, бэклог, Jira/Linear, Agile/Scrum, требования и риски; от 1,5 лет. Пробел — оплата в рублях, AI-продукты плюсом.</div>
-<a class="btn" href="https://hh.ru/vacancy/138126798" target="_blank" rel="noopener noreferrer">Открыть на hh.ru →</a>
-<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
-</article>
+<p class="empty">С предыдущей проверки новых подходящих вакансий нет.</p>
 </div></section>
 <section class="grp"><h2>⭐ Лучшие совпадения</h2><div class="list">
 <article class="card" data-id="138550519">
 <div class="top"><div class="badge b-hi" title="Оценка соответствия">88</div><div>
 <p class="title">Project Manager (FinTech / SaaS)</p>
 <div class="company">Devhunt · Польша</div>
-<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-a">✓ Подала</span></div></div></div>
+<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-u">🤔 Сомневаюсь</span><span class="s-a">✓ Подала</span></div></div></div>
 <div class="meta"><div><b>Зарплата:</b> не указана</div>
 <div><b>Опыт:</b> 3–6 лет по hh; в тексте от 2 лет</div>
 <div><b>Формат:</b> удалённо</div>
 <div><b>Найдено:</b> 2026-10-18 18:30 · опубликовано 2026-10-16</div></div>
 <div class="reason">Финтех/SaaS, Scrum, Jira/Confluence, SDLC; нужно от 2 лет PM, плюсом финтех и технический бэкграунд; B2B-контракт с европейской компанией.</div>
 <a class="btn" href="https://hh.ru/vacancy/138550519" target="_blank" rel="noopener noreferrer">Открыть на hh.ru →</a>
-<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
+<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-u" data-k="u">🤔 Сомневаюсь</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
 </article>
 <article class="card" data-id="138058280">
 <div class="top"><div class="badge b-hi" title="Оценка соответствия">86</div><div>
 <p class="title">Project Manager</p>
 <div class="company">Киселев Василий Андреевич · Москва</div>
-<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-a">✓ Подала</span></div></div></div>
+<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-u">🤔 Сомневаюсь</span><span class="s-a">✓ Подала</span></div></div></div>
 <div class="meta"><div><b>Зарплата:</b> от 2 500 до 3 000 $ на руки</div>
 <div><b>Опыт:</b> 1–3 года по hh</div>
 <div><b>Формат:</b> удалённо</div>
 <div><b>Найдено:</b> 2026-10-18 18:30 · опубликовано 2026-10-02</div></div>
 <div class="reason">Финтех-платформа (фиат и крипто): нужны понимание frontend/backend/API, Jira, Scrum, работа с ИИ — сильное совпадение по стеку и домену.</div>
 <a class="btn" href="https://hh.ru/vacancy/138058280" target="_blank" rel="noopener noreferrer">Открыть на hh.ru →</a>
-<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
+<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-u" data-k="u">🤔 Сомневаюсь</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
 </article>
 <article class="card" data-id="137976843">
 <div class="top"><div class="badge b-hi" title="Оценка соответствия">84</div><div>
 <p class="title">Product &amp; Project Manager — FinTech / Crypto</p>
 <div class="company">ПИПЛ.найм · Москва</div>
-<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-a">✓ Подала</span></div></div></div>
+<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-u">🤔 Сомневаюсь</span><span class="s-a">✓ Подала</span></div></div></div>
 <div class="meta"><div><b>Зарплата:</b> не указана</div>
 <div><b>Опыт:</b> 3–6 лет по hh; в тексте от 2 лет</div>
 <div><b>Формат:</b> удалённо</div>
 <div><b>Найдено:</b> 2026-10-18 18:30 · опубликовано 2026-09-30</div></div>
 <div class="reason">FinTech/Crypto, удалёнка из любой страны; 2–4 года PM/Product, нужен опыт с крипто-проектами, плюсом KYC и API.</div>
 <a class="btn" href="https://hh.ru/vacancy/137976843" target="_blank" rel="noopener noreferrer">Открыть на hh.ru →</a>
-<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
+<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-u" data-k="u">🤔 Сомневаюсь</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
 </article>
 <article class="card" data-id="138169102">
 <div class="top"><div class="badge b-hi" title="Оценка соответствия">82</div><div>
 <p class="title">Project Manager / Менеджер проектов / Руководитель проектов</p>
 <div class="company">Reputation House Marketing Management, LLC · Москва</div>
-<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-a">✓ Подала</span></div></div></div>
+<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-u">🤔 Сомневаюсь</span><span class="s-a">✓ Подала</span></div></div></div>
 <div class="meta"><div><b>Зарплата:</b> от 1 500 $ до вычета налогов</div>
 <div><b>Опыт:</b> 1–3 года по hh; в тексте от 2 лет</div>
 <div><b>Формат:</b> удалённо</div>
 <div><b>Найдено:</b> 2026-10-18 18:30 · опубликовано 2026-10-06</div></div>
 <div class="reason">B2B/SaaS-проекты, Agile, английский B2+; плюсом digital-маркетинг — совпадает с маркетинговым опытом.</div>
 <a class="btn" href="https://hh.ru/vacancy/138169102" target="_blank" rel="noopener noreferrer">Открыть на hh.ru →</a>
-<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
+<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-u" data-k="u">🤔 Сомневаюсь</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
 </article>
 <article class="card" data-id="137572806">
 <div class="top"><div class="badge b-mid" title="Оценка соответствия">78</div><div>
 <p class="title">Project Manager (международный AI-стартап)</p>
 <div class="company">Delegate · Москва</div>
-<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-a">✓ Подала</span></div></div></div>
+<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-u">🤔 Сомневаюсь</span><span class="s-a">✓ Подала</span></div></div></div>
 <div class="meta"><div><b>Зарплата:</b> от 180 000 до 250 000 ₽ на руки</div>
 <div><b>Опыт:</b> 3–6 лет по hh; в тексте от 3 лет</div>
 <div><b>Формат:</b> удалённо</div>
 <div><b>Найдено:</b> 2026-10-18 18:30 · опубликовано 2026-09-21</div></div>
 <div class="reason">AI-стартап: английский C1, PRD, роадмап, бэклог; от 3 лет PM. Минус — потолок зарплаты 250 тыс. ₽.</div>
 <a class="btn" href="https://hh.ru/vacancy/137572806" target="_blank" rel="noopener noreferrer">Открыть на hh.ru →</a>
-<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
+<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-u" data-k="u">🤔 Сомневаюсь</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
 </article>
 <article class="card" data-id="138164198">
 <div class="top"><div class="badge b-mid" title="Оценка соответствия">76</div><div>
 <p class="title">Project manager</p>
 <div class="company">Dukascopy · Баку</div>
-<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-a">✓ Подала</span></div></div></div>
+<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-u">🤔 Сомневаюсь</span><span class="s-a">✓ Подала</span></div></div></div>
 <div class="meta"><div><b>Зарплата:</b> не указана</div>
 <div><b>Опыт:</b> 3–6 лет по hh</div>
 <div><b>Формат:</b> удалённо</div>
 <div><b>Найдено:</b> 2026-10-18 18:30 · опубликовано 2026-10-18</div></div>
 <div class="reason">Швейцарский банк/финтех: понимание разработки, Agile, API. Плюсом — Oracle DB (пробел).</div>
 <a class="btn" href="https://hh.ru/vacancy/138164198" target="_blank" rel="noopener noreferrer">Открыть на hh.ru →</a>
-<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
+<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-u" data-k="u">🤔 Сомневаюсь</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
 </article>
 <article class="card" data-id="137751793">
 <div class="top"><div class="badge b-mid" title="Оценка соответствия">76</div><div>
 <p class="title">IT Project Manager (with product thinking)</p>
 <div class="company">Авдеева Мария Вадимовна · Тбилиси</div>
-<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-a">✓ Подала</span></div></div></div>
+<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-u">🤔 Сомневаюсь</span><span class="s-a">✓ Подала</span></div></div></div>
 <div class="meta"><div><b>Зарплата:</b> не указана</div>
 <div><b>Опыт:</b> 1–3 года по hh; в тексте от 2 лет</div>
 <div><b>Формат:</b> удалённо</div>
 <div><b>Найдено:</b> 2026-10-18 18:30 · опубликовано 2026-09-24</div></div>
 <div class="reason">Сильный английский, консультативная работа с клиентами, MVP и прототипы; от 2 лет.</div>
 <a class="btn" href="https://hh.ru/vacancy/137751793" target="_blank" rel="noopener noreferrer">Открыть на hh.ru →</a>
-<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
+<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-u" data-k="u">🤔 Сомневаюсь</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
 </article>
 <article class="card" data-id="137492570">
 <div class="top"><div class="badge b-mid" title="Оценка соответствия">74</div><div>
 <p class="title">Project Manager Middle (Scrum Master)</p>
 <div class="company">Itransition · Тбилиси</div>
-<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-a">✓ Подала</span></div></div></div>
+<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-u">🤔 Сомневаюсь</span><span class="s-a">✓ Подала</span></div></div></div>
 <div class="meta"><div><b>Зарплата:</b> не указана</div>
 <div><b>Опыт:</b> 1–3 года по hh; в тексте от 2 лет</div>
 <div><b>Формат:</b> удалённо</div>
 <div><b>Найдено:</b> 2026-10-18 18:30 · опубликовано 2026-10-17</div></div>
 <div class="reason">Agile, Jira, Confluence, английский B2+; от 2 лет. Пробел — нужен Agile-сертификат.</div>
 <a class="btn" href="https://hh.ru/vacancy/137492570" target="_blank" rel="noopener noreferrer">Открыть на hh.ru →</a>
-<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
+<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-u" data-k="u">🤔 Сомневаюсь</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
 </article>
 <article class="card" data-id="137961226">
 <div class="top"><div class="badge b-mid" title="Оценка соответствия">72</div><div>
 <p class="title">Product Owner (Fintech)</p>
 <div class="company">Простые Решения · Уфа</div>
-<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-a">✓ Подала</span></div></div></div>
+<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-u">🤔 Сомневаюсь</span><span class="s-a">✓ Подала</span></div></div></div>
 <div class="meta"><div><b>Зарплата:</b> от 1 000 до 2 000 $ на руки</div>
 <div><b>Опыт:</b> 3–6 лет по hh; в тексте от 3 лет</div>
 <div><b>Формат:</b> удалённо</div>
 <div><b>Найдено:</b> 2026-10-18 18:30 · опубликовано 2026-09-30</div></div>
 <div class="reason">Финтех, API, продуктовые метрики, CRM; от 3 лет. Пробел — нужен опыт именно Product Owner/PM.</div>
 <a class="btn" href="https://hh.ru/vacancy/137961226" target="_blank" rel="noopener noreferrer">Открыть на hh.ru →</a>
-<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
+<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-u" data-k="u">🤔 Сомневаюсь</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
 </article>
 <article class="card" data-id="132119544">
 <div class="top"><div class="badge b-mid" title="Оценка соответствия">72</div><div>
 <p class="title">Software Project Manager (BA/SA)</p>
 <div class="company">GEGI LLC · США</div>
-<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-a">✓ Подала</span></div></div></div>
+<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-u">🤔 Сомневаюсь</span><span class="s-a">✓ Подала</span></div></div></div>
 <div class="meta"><div><b>Зарплата:</b> от 1 500 до 2 000 $ на руки</div>
 <div><b>Опыт:</b> 3–6 лет по hh; в тексте от 3 лет</div>
 <div><b>Формат:</b> удалённо</div>
 <div><b>Найдено:</b> 2026-10-18 18:30 · опубликовано 2026-10-17</div></div>
 <div class="reason">Английский C1 + русский, user stories, роадмап; 3–5 лет. Пробел — бэкграунд BA/SA и профильное образование.</div>
 <a class="btn" href="https://hh.ru/vacancy/132119544" target="_blank" rel="noopener noreferrer">Открыть на hh.ru →</a>
-<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
+<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-u" data-k="u">🤔 Сомневаюсь</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
 </article>
 </div></section>
 <section class="grp"><h2>📋 Резерв</h2><div class="list">
@@ -183,79 +171,79 @@ html.js .applied.has{display:block}.applied summary{font-size:1.1rem;font-weight
 <div class="top"><div class="badge b-mid" title="Оценка соответствия">70</div><div>
 <p class="title">Project Manager (IT)</p>
 <div class="company">Гоуланг Технологии · Москва</div>
-<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-a">✓ Подала</span></div></div></div>
+<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-u">🤔 Сомневаюсь</span><span class="s-a">✓ Подала</span></div></div></div>
 <div class="meta"><div><b>Зарплата:</b> не указана</div>
 <div><b>Опыт:</b> 3–6 лет по hh; в тексте от 3 лет</div>
 <div><b>Формат:</b> удалённо</div>
 <div><b>Найдено:</b> 2026-10-18 18:30 · опубликовано 2026-10-16</div></div>
 <div class="reason">Scrum/Jira, роадмап, платежи; от 3 лет. Платформа «развлекательного характера», похоже на гемблинг.</div>
 <a class="btn" href="https://hh.ru/vacancy/137790827" target="_blank" rel="noopener noreferrer">Открыть на hh.ru →</a>
-<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
+<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-u" data-k="u">🤔 Сомневаюсь</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
 </article>
 <article class="card" data-id="138485115">
 <div class="top"><div class="badge b-lo" title="Оценка соответствия">68</div><div>
 <p class="title">Technical Project Manager</p>
 <div class="company">Клеркгрупп · Минск</div>
-<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-a">✓ Подала</span></div></div></div>
+<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-u">🤔 Сомневаюсь</span><span class="s-a">✓ Подала</span></div></div></div>
 <div class="meta"><div><b>Зарплата:</b> не указана</div>
 <div><b>Опыт:</b> 3–6 лет по hh</div>
 <div><b>Формат:</b> удалённо</div>
 <div><b>Найдено:</b> 2026-10-18 18:30 · опубликовано 2026-10-14</div></div>
 <div class="reason">Технические интеграции по API, Postman, английский B2/C1; роль ближе к технической поддержке партнёров.</div>
 <a class="btn" href="https://hh.ru/vacancy/138485115" target="_blank" rel="noopener noreferrer">Открыть на hh.ru →</a>
-<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
+<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-u" data-k="u">🤔 Сомневаюсь</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
 </article>
-<article class="card new" data-id="138126798">
+<article class="card" data-id="138126798">
 <div class="top"><div class="badge b-lo" title="Оценка соответствия">68</div><div>
-<p class="title">Middle Project Manager (Менеджер проектов)<span class="tag">НОВОЕ</span></p>
+<p class="title">Middle Project Manager (Менеджер проектов)</p>
 <div class="company">Your CodeReview · Воронеж</div>
-<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-a">✓ Подала</span></div></div></div>
+<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-u">🤔 Сомневаюсь</span><span class="s-a">✓ Подала</span></div></div></div>
 <div class="meta"><div><b>Зарплата:</b> от 140 000 ₽ до вычета налогов</div>
 <div><b>Опыт:</b> 1–3 года по hh; в тексте от 1,5 лет</div>
 <div><b>Формат:</b> удалённо</div>
 <div><b>Найдено:</b> 2026-10-18 20:00 · опубликовано 2026-10-05</div></div>
 <div class="reason">IT PM в AI-стартапе: спринты, бэклог, Jira/Linear, Agile/Scrum, требования и риски; от 1,5 лет. Пробел — оплата в рублях, AI-продукты плюсом.</div>
 <a class="btn" href="https://hh.ru/vacancy/138126798" target="_blank" rel="noopener noreferrer">Открыть на hh.ru →</a>
-<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
+<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-u" data-k="u">🤔 Сомневаюсь</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
 </article>
 <article class="card" data-id="137554072">
 <div class="top"><div class="badge b-lo" title="Оценка соответствия">66</div><div>
 <p class="title">Менеджер продукта / Product Manager</p>
 <div class="company">Хабаров Павел Евгеньевич · Омск</div>
-<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-a">✓ Подала</span></div></div></div>
+<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-u">🤔 Сомневаюсь</span><span class="s-a">✓ Подала</span></div></div></div>
 <div class="meta"><div><b>Зарплата:</b> от 150 000 до 250 000 ₽ на руки</div>
 <div><b>Опыт:</b> 3–6 лет по hh; в тексте от 3 лет</div>
 <div><b>Формат:</b> удалённо</div>
 <div><b>Найдено:</b> 2026-10-18 18:30 · опубликовано 2026-10-17</div></div>
 <div class="reason">Финтех (переводы, BNPL), роадмап и бэклог; от 3 лет PM/PO. Пробелы — B2C-продукт, SQL.</div>
 <a class="btn" href="https://hh.ru/vacancy/137554072" target="_blank" rel="noopener noreferrer">Открыть на hh.ru →</a>
-<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
+<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-u" data-k="u">🤔 Сомневаюсь</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
 </article>
 <article class="card" data-id="138198987">
 <div class="top"><div class="badge b-lo" title="Оценка соответствия">63</div><div>
 <p class="title">Product Owner / Product Manager | FinTech</p>
 <div class="company">ARBI Exchange · Таиланд</div>
-<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-a">✓ Подала</span></div></div></div>
+<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-u">🤔 Сомневаюсь</span><span class="s-a">✓ Подала</span></div></div></div>
 <div class="meta"><div><b>Зарплата:</b> от 3 000 до 4 000 $ на руки</div>
 <div><b>Опыт:</b> 3–6 лет по hh; в тексте от 3 лет</div>
 <div><b>Формат:</b> удалённо</div>
 <div><b>Найдено:</b> 2026-10-18 18:30 · опубликовано 2026-10-16</div></div>
 <div class="reason">Финтех/платежи, API-интеграции; от 3 лет Product Manager в финтехе — главный пробел.</div>
 <a class="btn" href="https://hh.ru/vacancy/138198987" target="_blank" rel="noopener noreferrer">Открыть на hh.ru →</a>
-<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
+<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-u" data-k="u">🤔 Сомневаюсь</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
 </article>
 <article class="card" data-id="134386621">
 <div class="top"><div class="badge b-lo" title="Оценка соответствия">62</div><div>
 <p class="title">Technical Product Owner (TPO)</p>
 <div class="company">Itransition · Ташкент</div>
-<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-a">✓ Подала</span></div></div></div>
+<div class="st"><span class="s-v">👁 Просмотрено</span><span class="s-u">🤔 Сомневаюсь</span><span class="s-a">✓ Подала</span></div></div></div>
 <div class="meta"><div><b>Зарплата:</b> не указана</div>
 <div><b>Опыт:</b> 3–6 лет по hh; в тексте от 2 лет</div>
 <div><b>Формат:</b> удалённо</div>
 <div><b>Найдено:</b> 2026-10-18 18:30 · опубликовано 2026-10-17</div></div>
 <div class="reason">Technical Product Owner: SDLC, Agile, REST API, английский C1; от 2 лет PO/BA. Нужны UML/BPMN.</div>
 <a class="btn" href="https://hh.ru/vacancy/134386621" target="_blank" rel="noopener noreferrer">Открыть на hh.ru →</a>
-<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
+<div class="marks"><button type="button" class="mk mk-v" data-k="v">👁 Просмотрено</button><button type="button" class="mk mk-u" data-k="u">🤔 Сомневаюсь</button><button type="button" class="mk mk-a" data-k="a">✓ Подала</button></div>
 </article>
 </div></section>
 <section class="grp"><h2>🤖 Найдено автоматически (новые сверху)</h2><div class="list">
@@ -264,7 +252,7 @@ html.js .applied.has{display:block}.applied summary{font-size:1.1rem;font-weight
 <details class="applied" id="applied"><summary>✓ Уже подала (<span id="c-ap2">0</span>)</summary><div class="list" id="applied-list"></div></details>
 </main>
 <footer>Оценка 0–100 — соответствие профилю кандидата (навыки, роль, опыт). Проверка новых вакансий каждый час.<br>
-Всего в списке: 16. Последняя проверка: просмотрено 788 вакансий, из них ранее не оценённых 31. Данные взяты с публичных страниц hh.ru; вакансия могла быть уже закрыта.</footer>
+Всего в списке: 16. Последняя проверка: просмотрено 1293 вакансий, из них ранее не оценённых 424. Данные взяты с публичных страниц hh.ru; вакансия могла быть уже закрыта.</footer>
 <script>
 (function(){var d=document,K='hhmarks:v1',S={};document.documentElement.classList.add('js');
 try{S=JSON.parse(localStorage.getItem(K)||'{}')}catch(e){S={}}
@@ -272,19 +260,19 @@ function save(){try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}}
 var cards=[].slice.call(d.querySelectorAll('.card[data-id]')),F='all',AL=d.getElementById('applied-list');
 cards.forEach(function(c){var p=d.createComment('c');c.parentNode.insertBefore(p,c);c._ph=p;});
 function st(id){return S[id]||{}}
-function set(id,k,val){var o=st(id);if(val)o[k]=1;else delete o[k];if(o.v||o.a)S[id]=o;else delete S[id];save();upd();}
-function upd(){var seen={},ids={},n={all:0,unseen:0,applied:0};
- cards.forEach(function(c){var id=c.dataset.id,o=st(id);c.classList.toggle('v',!!o.v);c.classList.toggle('a',!!o.a);
+function set(id,k,val){var o=st(id);if(val)o[k]=1;else delete o[k];if(k==='a'&&val)delete o.u;if(o.v||o.a||o.u)S[id]=o;else delete S[id];save();upd();}
+function upd(){var seen={},ids={},n={all:0,unseen:0,applied:0,unsure:0};
+ cards.forEach(function(c){var id=c.dataset.id,o=st(id);c.classList.toggle('v',!!o.v);c.classList.toggle('a',!!o.a);c.classList.toggle('u',!!o.u&&!o.a);c.querySelector('.mk-u').classList.toggle('on',!!o.u);c.querySelector('.mk-u').textContent=o.u?'↺ Не сомневаюсь':'🤔 Сомневаюсь';
   c.querySelector('.mk-v').classList.toggle('on',!!o.v);c.querySelector('.mk-a').classList.toggle('on',!!o.a);
   c.querySelector('.mk-v').textContent=o.v?'↺ Не просмотрено':'👁 Просмотрено';c.querySelector('.mk-a').textContent=o.a?'↺ Не подала':'✓ Подала';
   if(o.a&&!seen[id]){AL.appendChild(c);}else if(c._ph.parentNode&&c.parentNode!==c._ph.parentNode){c._ph.parentNode.insertBefore(c,c._ph.nextSibling);}
   c.classList.toggle('dup',!!seen[id]);seen[id]=1;
-  if(!ids[id]){ids[id]=1;n.all++;if(o.a)n.applied++;else if(!o.v)n.unseen++;}
-  var show=F==='all'||(F==='unseen'&&!o.v&&!o.a)||(F==='applied'&&o.a);c.classList.toggle('hide',!show);});
+  if(!ids[id]){ids[id]=1;n.all++;if(o.a)n.applied++;else{if(o.u)n.unsure++;if(!o.v)n.unseen++;}}
+  var show=F==='all'||(F==='unseen'&&!o.v&&!o.a)||(F==='unsure'&&o.u&&!o.a)||(F==='applied'&&o.a);c.classList.toggle('hide',!show);});
  [].slice.call(d.querySelectorAll('.grp')).forEach(function(g){var vis=g.querySelector('.card:not(.hide):not(.dup)');
   g.classList.toggle('hide',F!=='all'&&!vis);var em=g.querySelector('.empty');if(em)em.classList.toggle('hide',F!=='all');});
  var ap=d.getElementById('applied');ap.classList.toggle('has',n.applied>0);if(F==='applied')ap.open=true;
- d.getElementById('c-all').textContent=n.all;d.getElementById('c-unseen').textContent=n.unseen;d.getElementById('c-applied').textContent=n.applied;d.getElementById('c-ap2').textContent=n.applied;}
+ d.getElementById('c-all').textContent=n.all;d.getElementById('c-unseen').textContent=n.unseen;d.getElementById('c-applied').textContent=n.applied;d.getElementById('c-unsure').textContent=n.unsure;d.getElementById('c-ap2').textContent=n.applied;}
 d.addEventListener('click',function(e){var b=e.target.closest('.mk');if(b){var c=b.closest('.card'),k=b.dataset.k;set(c.dataset.id,k,!st(c.dataset.id)[k]);return;}
  var a=e.target.closest('a.btn');if(a){var cc=a.closest('.card');if(cc&&!st(cc.dataset.id).v)setTimeout(function(){set(cc.dataset.id,'v',1)},300);return;}
  var f=e.target.closest('.filt button');if(f){F=f.dataset.f;[].slice.call(d.querySelectorAll('.filt button')).forEach(function(x){x.classList.toggle('on',x===f)});upd();}});
